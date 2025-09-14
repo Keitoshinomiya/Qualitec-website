@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Qualitec Track Force Pro 2000｜4Kミラー型ドラレコ 公式サイト</title>
+  <meta name="description" content="Qualitec Track Force Pro 2000｜フロント4K・11.26インチタッチ・HDR/WDR・IP67リア・駐車監視。32GB microSD同梱。安心をこの1台に。" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Qualitec" />
+  <meta property="og:title" content="Qualitec Track Force Pro 2000｜4Kミラー型ドラレコ" />
+  <meta property="og:description" content="フロント4K・11.26インチ・HDR/WDR・IP67リア・駐車監視。32GB microSD同梱。" />
+  <meta property="og:image" content="assets/og.jpg" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root{
+      --primary:#00a9ff; --bg:#000; --bg2:#0f1012;
+      --text:#fff; --muted:#a8acb3; --border:#22252b;
+      --font-en:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;
+      --font-ja:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--text);background:var(--bg);font-family:var(--font-ja);line-height:1.75;-webkit-font-smoothing:antialiased}
+    img{max-width:100%;height:auto;border-radius:8px}
+    a{color:inherit}
+    .container{max-width:1160px;margin:auto;padding:0 20px}
+
+    /* Header */
+    .skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{left:16px;top:16px;background:#111;color:#fff;padding:8px 12px;border-radius:8px;z-index:1100}
+    header.header{position:fixed;inset:0 0 auto 0;z-index:1000;padding:14px 0;transition:background .25s ease,box-shadow .25s ease}
+    header.header.scrolled{background:rgba(0,0,0,.75);backdrop-filter:saturate(150%) blur(12px);box-shadow:0 2px 20px rgba(0,0,0,.25)}
+    .hdr{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{font-family:var(--font-en);font-weight:700;letter-spacing:.5px;text-decoration:none;font-size:1.1rem}
+    .logo span{color:var(--primary)}
+    nav.nav{display:flex;gap:18px;align-items:center}
+    nav.nav a{text-decoration:none;color:#e7ebf0;opacity:.9;font-size:.95rem}
+    nav.nav a:hover,nav.nav a:focus-visible{opacity:1}
+    .btn-buy{display:inline-flex;align-items:center;gap:.5rem;background:var(--primary);color:#fff;font-weight:700;border:2px solid var(--primary);padding:.6rem 1rem;border-radius:10px;text-decoration:none}
+    .btn-buy:hover{background:transparent;color:var(--primary)}
+
+    /* Hero */
+    .hero{position:relative;min-height:92vh;display:grid;place-items:center;text-align:center;overflow:hidden}
+    .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;filter:saturate(.7) contrast(1.05) brightness(.7);opacity:.28}
+    .hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.68), rgba(0,0,0,.5) 40%, rgba(0,0,0,.85))}
+    .hero .content{position:relative;z-index:1;padding:96px 0 48px}
+    .hero h1{font-family:var(--font-en);font-weight:800;letter-spacing:1px;font-size:clamp(2rem,5vw,3.5rem);margin:0 0 10px;text-shadow:0 0 26px rgba(0,0,0,.45)}
+    .lead{color:var(--muted);font-size:clamp(1rem,2.5vw,1.2rem)}
+    .trust{position:relative;z-index:1;margin-top:28px}
+    .trust ul{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;list-style:none;padding:0;margin:0}
+    .trust li{border:1px solid var(--border);background:rgba(255,255,255,.03);padding:10px 8px;border-radius:12px;font-size:.82rem;color:#e5e9ef}
+    .trust b{color:#fff}
+
+    /* Sections */
+    section{padding:96px 0}
+    section.alt{background:var(--bg2)}
+    .title{font-family:var(--font-en);font-weight:800;font-size:clamp(1.6rem,3.5vw,2.4rem);text-align:center;margin:0 0 48px}
+    .title span{color:var(--primary)}
+
+    .two{display:grid;grid-template-columns:repeat(2,1fr);gap:48px;align-items:center}
+    .two p{color:var(--muted)}
+    .kicker{display:inline-block;font-family:var(--font-en);font-weight:700;letter-spacing:.08em;color:#9bd3ff;margin-bottom:6px}
+    h3{font-size:clamp(1.3rem,3vw,2rem);margin:.2rem 0 .8rem}
+
+    /* Setup / video wrap */
+    .setup{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:center}
+    .vw{position:relative;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+    .vw::before{content:'';display:block;padding-bottom:56.25%}
+    .vw iframe{position:absolute;inset:0;width:100%;height:100%}
+
+    /* Specs */
+    .specs{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+    .spec-list{list-style:none;margin:0;padding:0;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+    .spec-list li{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:14px 16px;border-top:1px solid var(--border);align-items:center}
+    .spec-list li:first-child{border-top:none}
+    .label{color:var(--muted)}
+    .note{color:var(--muted);font-size:.95rem}
+
+    /* Compare */
+    .table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+    .table th,.table td{padding:14px 12px;border-top:1px solid var(--border);text-align:left}
+    .table thead th{background:#0a0b0d;font-family:var(--font-en)}
+    .table tbody tr:nth-child(odd){background:rgba(255,255,255,.02)}
+    .chip{display:inline-block;padding:.2rem .5rem;border:1px solid var(--border);border-radius:999px;font-size:.8rem}
+
+    /* Reviews */
+    .reviews{scroll-snap-type:x mandatory;display:flex;gap:16px;overflow:auto;padding-bottom:8px}
+    .review{scroll-snap-align:start;min-width:280px;flex:0 0 320px;border:1px solid var(--border);background:rgba(255,255,255,.03);border-radius:16px;padding:18px}
+    .stars{letter-spacing:.15em}
+
+    /* CTA */
+    .cta{text-align:center}
+    .cta .cta-btn{display:inline-block;background:var(--primary);color:#fff;padding:14px 32px;border-radius:10px;font-weight:800;border:2px solid var(--primary);text-decoration:none}
+    .cta .cta-btn:hover{background:transparent;color:var(--primary)}
+
+    /* Sticky CTA */
+    .sticky{position:fixed;left:env(safe-area-inset-left);right:env(safe-area-inset-right);bottom:16px;z-index:900;display:none}
+    .sticky .wrap{margin:auto;max-width:1160px;display:flex;align-items:center;gap:12px;background:rgba(10,12,16,.7);backdrop-filter:blur(10px);border:1px solid var(--border);border-radius:16px;padding:10px 12px}
+    .sticky .title{font-weight:700}
+    .sticky .cta-btn{margin-left:auto}
+
+    /* FAQ & Form */
+    .faq{max-width:900px;margin:auto}
+    details{border:1px solid var(--border);border-radius:12px;padding:14px 16px;background:rgba(255,255,255,.02)}
+    details+details{margin-top:12px}
+    summary{cursor:pointer;font-weight:700}
+    details p{color:var(--muted);margin:8px 0 0}
+    form .group{margin-bottom:16px}
+    label{display:block;margin-bottom:6px;color:var(--muted);font-weight:700}
+    input,textarea{width:100%;padding:14px;border-radius:10px;border:1px solid var(--border);background:#000;color:#fff}
+    input:focus-visible,textarea:focus-visible{outline:none;border-color:var(--primary);box-shadow:0 0 0 4px rgba(0,169,255,.15)}
+    .btn{display:inline-block;width:100%;padding:14px;background:var(--primary);font-weight:800;border:none;border-radius:10px;color:#fff}
+
+    /* Fade */
+    .fade{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+    .fade.visible{opacity:1;transform:none}
+
+    /* Footer */
+    footer{border-top:1px solid var(--border);padding:46px 0;text-align:center;color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:980px){
+      nav.nav{display:none}
+      .two,.setup,.specs{grid-template-columns:1fr}
+      .trust ul{grid-template-columns:repeat(3,1fr)}
+      .sticky .wrap{margin:0 12px}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">本文へスキップ</a>
+
+  <header id="site-header" class="header" role="banner">
+    <div class="container hdr">
+      <a href="#" class="logo" aria-label="Qualitec ホーム">Qualitec<span>.</span></a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="#features">特長</a>
+        <a href="#setup">設置</a>
+        <a href="#specs">仕様</a>
+        <a href="#compare">比較</a>
+        <a href="#faq" class="chip">FAQ</a>
+        <a href="#contact" class="chip">お問い合わせ</a>
+      </nav>
+      <a class="btn-buy" href="https://amzn.asia/d/1L5hb8N" target="_blank" rel="noopener">Amazonで購入</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-label="ヒーロー">
+      <video id="hero-video" autoplay muted playsinline loop preload="metadata" poster="assets/poster.jpg" aria-hidden="true">
+        <source src="assets/hero.webm" type="video/webm" />
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay" aria-hidden="true"></div>
+      <div class="container content">
+        <h1 class="fade">Qualitec Track Force Pro 2000</h1>
+        <p class="lead fade">その一瞬が、未来の証拠になる。4K高画質ミラー型ドライブレコーダー</p>
+
+        <div class="trust fade" aria-label="主要スペック">
+          <ul>
+            <li><b>フロント4K</b> / HDR・WDR</li>
+            <li><b>11.26"</b> タッチパネル</li>
+            <li><b>IP67</b> リアカメラ</li>
+            <li>駐車監視 / ループ録画</li>
+            <li><b>32GB</b> microSD 同梱</li>
+            <li>日本語 <b>サポート</b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 特長 -->
+    <section id="features">
+      <div class="container">
+        <h2 class="title fade"><span>800万画素</span> × 4Kで、昼夜を問わず鮮明。</h2>
+        <div class="two">
+          <div class="fade">
+            <div class="kicker">IMAGE</div>
+            <h3>4Kフロント + 高感度イメージセンサー</h3>
+            <p>広角フロント 170° / リア 110° と HDR/WDR による補正で、逆光・夜間でも白飛びや黒つぶれを低減します。</p>
+          </div>
+          <div class="fade">
+            <img src="assets/main.jpg" alt="ミラー型4Kドラレコのメインイメージ" width="1600" height="900" loading="lazy" decoding="async" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 右ハンドル最適化 / 分割表示 -->
+    <section class="alt">
+      <div class="container two">
+        <div class="fade">
+          <img src="assets/ui.jpg" alt="フロント・リア・分割表示の切り替えUI" width="1600" height="900" loading="lazy" decoding="async" />
+        </div>
+        <div class="fade">
+          <div class="kicker">UX</div>
+          <h3>直感操作。左右スワイプで <em>フロント/リア/分割</em> 切替</h3>
+          <p>右ハンドル車に最適化された UI。上下スワイプでカメラ角度の微調整が可能です。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 設置 & 動画 -->
+    <section id="setup">
+      <div class="container">
+        <h2 class="title fade"><span>EASY</span> SETUP</h2>
+        <div class="setup">
+          <div class="fade">
+            <h3>わずか 15 分で設置完了</h3>
+            <p class="note">必要な取り付け用品を同梱。初めてでも迷いにくい構成です。</p>
+            <img src="assets/setup.jpg" alt="内容物と取り付けイメージ" width="1400" height="1000" loading="lazy" decoding="async" />
+          </div>
+          <div class="vw fade" aria-label="取り付け動画">
+            <iframe src="https://www.youtube.com/embed/a5aoVRNYYI4?rel=0&modestbranding=1&playsinline=1"
+              title="Qualitec Track Force Pro 2000 取り付け手順" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- パッケージ -->
+    <section class="alt" id="package">
+      <div class="container two">
+        <div class="fade">
+          <img src="assets/package.jpg" alt="本体・リアカメラ・SDカードなど同梱物一覧" width="1600" height="900" loading="lazy" decoding="async" />
+        </div>
+        <div class="fade">
+          <div class="kicker">ALL-IN-ONE</div>
+          <h3>届いたその日から、あなたのドライブを守る</h3>
+          <p>本体・リアカメラ・固定バンド・配線・マニュアルなどを同梱。<span class="chip">microSD 32GB</span> を同梱しています。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 仕様 -->
+    <section id="specs">
+      <div class="container">
+        <h2 class="title fade">製品 <span>仕様</span></h2>
+        <div class="specs">
+          <div class="fade">
+            <h3>凝縮された確かな性能</h3>
+            <p class="note">※ 4K はフロントカメラの最大記録解像度です。※ 駐車監視機能は、別途ヒューズボックス経由での配線が必要となります（弊社では配線部材・工事の取り扱いはございません）。駐車監視をご希望の際は、お近くの整備工場・ディーラー様へご相談ください。※ 防水等級はリアカメラ（IP67）です。</p>
+          </div>
+          <div class="fade">
+            <ul class="spec-list" aria-label="主な仕様">
+              <li><span class="label">フロント解像度</span><span>最大 4K (UltraHD)</span></li>
+              <li><span class="label">視野角</span><span>フロント 170° / リア 110°</span></li>
+              <li><span class="label">画面</span><span>11.26" タッチパネル</span></li>
+              <li><span class="label">補正機能</span><span>HDR / WDR</span></li>
+              <li><span class="label">記録メディア</span><span>microSD 32GB 同梱</span></li>
+              <li><span class="label">防水</span><span>リアカメラ IP67</span></li>
+              <li><span class="label">録画</span><span>ループ録画 / Gセンサー / 駐車監視</span></li>
+              <li><span class="label">サポート</span><span>日本語サポート・マニュアル</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 比較表 -->
+    <section id="compare" class="alt">
+      <div class="container">
+        <h2 class="title fade">他のミラー型と <span>比較</span></h2>
+        <div class="fade" role="region" aria-label="比較表">
+          <table class="table" aria-describedby="compare-note">
+            <thead>
+              <tr><th>項目</th><th>Track Force Pro 2000</th><th>一般的なミラー型</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>フロント解像度</td><td>4K</td><td>1080p 〜 2.5K</td></tr>
+              <tr><td>リア防水</td><td>IP67</td><td>IP65 相当 / 明記なし</td></tr>
+              <tr><td>画面サイズ</td><td>11.26"</td><td>10" 前後</td></tr>
+              <tr><td>HDR/WDR</td><td>対応</td><td>製品により異なる</td></tr>
+              <tr><td>駐車監視</td><td>対応（ヒューズ配線推奨）</td><td>対応/非対応あり</td></tr>
+              <tr><td>サポート</td><td>日本語サポート</td><td>英語のみの場合あり</td></tr>
+            </tbody>
+          </table>
+          <p id="compare-note" class="note" style="margin-top:8px">※ 一般的な製品の仕様は市場の同等品を参考にした目安です。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- レビュー（抜粋） -->
+    <section id="reviews">
+      <div class="container">
+        <h2 class="title fade">ユーザーフィードバック（抜粋）</h2>
+        <div class="reviews fade" aria-label="レビューのスライダー">
+          <article class="review" aria-label="review-1">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <h3 style="margin:.3rem 0 .2rem">夜間でも見やすい</h3>
+            <p class="note">HDR/WDR と広角で暗い場所でもしっかり映るのが安心。</p>
+          </article>
+          <article class="review" aria-label="review-2">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <h3 style="margin:.3rem 0 .2rem">取り付けが簡単</h3>
+            <p class="note">付属品が揃っていて 15 分ほどで装着できました。</p>
+          </article>
+          <article class="review" aria-label="review-3">
+            <div class="stars" aria-hidden="true">★★★★☆</div>
+            <h3 style="margin:.3rem 0 .2rem">画面が大きく操作しやすい</h3>
+            <p class="note">11.26 インチのタッチで直感的に切り替え可能。</p>
+          </article>
+        </div>
+        <p class="note" style="margin-top:10px">※ 個人の感想です。実際のレビューは販売ページをご確認ください。</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta alt" id="purchase">
+      <div class="container">
+        <h2 class="title fade">すべてのドライバーへ、<span>確かな安心</span>を。</h2>
+        <p class="fade" style="color:var(--muted);max-width:680px;margin:0 auto 20px">フロント 4K、IP67 リア、11.26&quot; タッチ、駐車監視。必要な安心をこの 1 台に。</p>
+        <a class="cta-btn fade" href="https://amzn.asia/d/1L5hb8N" target="_blank" rel="noopener">Amazonで購入</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <h2 class="title fade">よくある <span>質問</span></h2>
+        <div class="faq fade">
+          <details>
+            <summary>駐車監視はどうやって使えますか？</summary>
+            <p>駐車監視機能は、別途ヒューズボックス経由での配線が必要となります（弊社では配線部材・工事の取り扱いはございません）。駐車監視をご希望の際は、お近くの整備工場・ディーラー様へご相談ください。</p>
+          </details>
+          <details>
+            <summary>同梱のメモリーカードは？</summary>
+            <p>32GBのmicroSDメモリーカードを同梱しています。</p>
+          </details>
+          <details>
+            <summary>防水なのはどの部分ですか？</summary>
+            <p>リアカメラが IP67 相当の防水に対応します。フロント本体は防水ではありません。</p>
+          </details>
+          <details>
+            <summary>保証・サポートはありますか？</summary>
+            <p>日本語のサポート窓口をご用意しています。取付・初期設定に不安がある方もご相談ください。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 問い合わせフォーム -->
+    <section id="contact" class="alt">
+      <div class="container">
+        <h2 class="title fade"><span>CONTACT</span> お問い合わせ</h2>
+        <form id="contact-form" class="fade" method="post" action="https://formspree.io/f/your-id" autocomplete="on" novalidate>
+          <!-- honeypot -->
+          <input type="text" name="address" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-10000px" />
+          <div class="group"><label for="name">お名前</label><input id="name" name="name" required /></div>
+          <div class="group"><label for="email">メールアドレス</label><input id="email" name="email" type="email" required /></div>
+          <div class="group"><label for="message">お問い合わせ内容</label><textarea id="message" name="message" rows="6" required></textarea></div>
+          <button class="btn" type="submit">送信する</button>
+          <p id="form-msg" class="note" role="status" aria-live="polite" style="margin-top:8px"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky CTA -->
+  <div class="sticky" id="sticky-cta" aria-hidden="true">
+    <div class="wrap container">
+      <span class="title">Track Force Pro 2000</span>
+      <a class="cta-btn" href="https://amzn.asia/d/1L5hb8N" target="_blank" rel="noopener">Amazonで購入</a>
+    </div>
+  </div>
+
+  <footer role="contentinfo">
+    <div class="container">&copy; 2025 Qualitec. All Rights Reserved.</div>
+  </footer>
+
+  <!-- JSON-LD Product & FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Qualitec Track Force Pro 2000",
+    "brand": {"@type": "Brand", "name": "Qualitec"},
+    "description": "フロント4K・11.26インチタッチ・HDR/WDR・IP67リア・駐車監視。32GB microSD同梱のミラー型ドライブレコーダー。",
+    "image": ["assets/og.jpg"],
+    "offers": {"@type":"Offer", "url":"https://amzn.asia/d/1L5hb8N", "priceCurrency":"JPY"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"駐車監視はどうやって使えますか？","acceptedAnswer":{"@type":"Answer","text":"駐車監視機能は、別途ヒューズボックス経由での配線が必要となります（弊社では配線部材・工事の取り扱いはございません）。駐車監視をご希望の際は、お近くの整備工場・ディーラー様へご相談ください。"}},
+      {"@type":"Question","name":"同梱のメモリーカードは？","acceptedAnswer":{"@type":"Answer","text":"32GBのmicroSDメモリーカードを同梱しています。"}},
+      {"@type":"Question","name":"防水なのはどの部分ですか？","acceptedAnswer":{"@type":"Answer","text":"リアカメラが IP67 相当の防水に対応します。フロント本体は防水ではありません。"}},
+      {"@type":"Question","name":"保証・サポートはありますか？","acceptedAnswer":{"@type":"Answer","text":"日本語のサポート窓口をご用意しています。取付・初期設定に不安がある方もご相談ください。"}}
+    ]
+  }
+  </script>
+
+  <script>
+    // Header background on scroll
+    const header = document.getElementById('site-header');
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 24);
+    window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+    // Fade-in observer
+    const io = new IntersectionObserver((es)=>{
+      for(const e of es) if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+    }, { threshold:.2, rootMargin:'0px 0px -50px' });
+    document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+
+    // Sticky CTA after scroll
+    const sticky = document.getElementById('sticky-cta');
+    const toggleSticky = () => {
+      const show = window.scrollY > 600;
+      sticky.style.display = show ? 'block' : 'none';
+      sticky.setAttribute('aria-hidden', show ? 'false' : 'true');
+    };
+    window.addEventListener('scroll', toggleSticky, { passive: true }); toggleSticky();
+
+    // Respect reduced motion & error fallback
+    const vid = document.getElementById('hero-video');
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const handleMotion = () => { if (prefersReduced.matches) { try{vid.pause();}catch{} vid.removeAttribute('autoplay'); } else { vid.play().catch(()=>{}); } };
+    prefersReduced.addEventListener('change', handleMotion); handleMotion();
+    vid.addEventListener('error', () => {
+      const hero = document.querySelector('.hero');
+      if (hero) hero.style.background = "#000 url('assets/poster.jpg') center/cover no-repeat";
+      try { vid.remove(); } catch(e) {}
+    });
+
+    // Simple form validation
+    const form = document.getElementById('contact-form');
+    form?.addEventListener('submit', (e) => {
+      const hp = form.querySelector('input[name="address"]');
+      if (hp && hp.value) { e.preventDefault(); return; }
+      const name = form.name.value.trim(), email = form.email.value.trim(), msg = form.message.value.trim();
+      if (!name || !email || !msg) { e.preventDefault(); document.getElementById('form-msg').textContent = '未入力の項目があります。'; }
+    });
+  </script>
+</body>
+</html>
