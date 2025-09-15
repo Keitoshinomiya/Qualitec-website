@@ -46,8 +46,21 @@
 
     /* Hero */
     .hero{position:relative;min-height:92vh;display:grid;place-items:center;text-align:center;overflow:hidden}
-    .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;filter:saturate(.7) contrast(1.05) brightness(.7);opacity:.28}
-    .hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.68), rgba(0,0,0,.5) 40%, rgba(0,0,0,.85))}
+    /* UPDATED: 動画を明るく＋濃く */
+    .hero video{
+      position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;
+      filter:saturate(.9) contrast(1.06) brightness(1); /* ← 0.7 → 1 に上げる */
+      opacity:.60; /* ← 0.28 → 0.60 に上げる */
+    }
+    /* UPDATED: オーバーレイを薄く */
+    .hero .overlay{
+      position:absolute;inset:0;
+      background:linear-gradient(180deg,
+        rgba(0,0,0,.38),   /* ← 0.68 → 0.38 */
+        rgba(0,0,0,.22) 40%, /* ← 0.5 → 0.22 */
+        rgba(0,0,0,.62)    /* ← 0.85 → 0.62 */
+      );
+    }
     .hero .content{position:relative;z-index:1;padding:96px 0 48px}
     .hero h1{font-family:var(--font-en);font-weight:800;letter-spacing:1px;font-size:clamp(2rem,5vw,3.5rem);margin:0 0 10px;text-shadow:0 0 26px rgba(0,0,0,.45)}
     .lead{color:var(--muted);font-size:clamp(1rem,2.5vw,1.2rem)}
@@ -435,7 +448,7 @@
     // Simple form validation
     const form = document.getElementById('contact-form');
     form?.addEventListener('submit', (e) => {
-      const hp = form.querySelector('input[name="address"]');
+      const hp = form.querySelector('input[name=\"address\"]');
       if (hp && hp.value) { e.preventDefault(); return; }
       const name = form.name.value.trim(), email = form.email.value.trim(), msg = form.message.value.trim();
       if (!name || !email || !msg) { e.preventDefault(); document.getElementById('form-msg').textContent = '未入力の項目があります。'; }
