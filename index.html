@@ -360,20 +360,45 @@
     </section>
 
     <!-- 問い合わせフォーム -->
-    <section id="contact" class="alt">
-      <div class="container">
-        <h2 class="title fade"><span>CONTACT</span> お問い合わせ</h2>
-        <form id="contact-form" class="fade" method="post" action="https://formspree.io/f/your-id" autocomplete="on" novalidate>
-          <!-- honeypot -->
-          <input type="text" name="address" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-10000px" />
-          <div class="group"><label for="name">お名前</label><input id="name" name="name" required /></div>
-          <div class="group"><label for="email">メールアドレス</label><input id="email" name="email" type="email" required /></div>
-          <div class="group"><label for="message">お問い合わせ内容</label><textarea id="message" name="message" rows="6" required></textarea></div>
-          <button class="btn" type="submit">送信する</button>
-          <p id="form-msg" class="note" role="status" aria-live="polite" style="margin-top:8px"></p>
-        </form>
+<!-- 問い合わせフォーム（Netlify Forms） -->
+<section id="contact" class="alt">
+  <div class="container">
+    <h2 class="title fade"><span>CONTACT</span> お問い合わせ</h2>
+
+    <form id="contact-form" name="contact" class="fade"
+          method="POST"
+          action="/thanks.html"
+          data-netlify="true"
+          data-netlify-honeypot="address"
+          autocomplete="on" novalidate>
+
+      <!-- Netlify検出用（必須） -->
+      <input type="hidden" name="form-name" value="contact" />
+
+      <!-- honeypot（人間は入力しない） -->
+      <input type="text" name="address" tabindex="-1" autocomplete="off"
+             aria-hidden="true" style="position:absolute;left:-10000px" />
+
+      <div class="group"><label for="name">お名前</label>
+        <input id="name" name="name" required />
       </div>
-    </section>
+
+      <div class="group"><label for="email">メールアドレス</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+
+      <div class="group"><label for="message">お問い合わせ内容</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+
+      <!-- reCAPTCHA を使う場合はこの2行を有効化
+      <div data-netlify-recaptcha="true"></div>
+      -->
+      <button class="btn" type="submit">送信する</button>
+      <p id="form-msg" class="note" role="status" aria-live="polite" style="margin-top:8px"></p>
+    </form>
+  </div>
+</section>
   </main>
 
   <!-- Sticky CTA -->
