@@ -367,12 +367,10 @@
     <form id="contact-form" name="contact" class="fade"
           method="POST"
           action="/thanks.html"
-          data-netlify="true"
+          netlify
           data-netlify-honeypot="address"
           autocomplete="on" novalidate>
 
-      <!-- Netlify検出用（必須） -->
-      <input type="hidden" name="form-name" value="contact" />
       <!-- 通知メールの件名設定 -->
       <input type="hidden" name="subject" value="Qualitecサイトからのお問い合わせ" />
 
