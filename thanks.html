@@ -5,16 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>送信完了｜Qualitec</title>
   <style>
-    body{background:#000;color:#fff;font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;line-height:1.7}
-    .wrap{max-width:800px;margin:10vh auto;padding:0 20px;text-align:center}
-    a{color:#00a9ff}
+    :root{
+      --primary:#00a9ff; --bg:#000;
+      --text:#fff; --muted:#a8acb3; --border:#22252b;
+      --font-en:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;
+      --font-ja:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:var(--font-ja);
+      line-height:1.75;
+      -webkit-font-smoothing:antialiased;
+      display:grid;
+      place-items:center;
+      min-height:100vh;
+    }
+    .wrap{
+      max-width:600px;
+      padding:40px 20px;
+      text-align:center;
+    }
+    h1 {
+      font-family:var(--font-en);
+      font-weight:800;
+      margin-bottom:1rem;
+    }
+    p { color:var(--muted); margin-bottom:2rem; }
+    .btn {
+      display:inline-block;
+      padding:12px 32px;
+      background:var(--primary);
+      color:#fff;
+      font-weight:700;
+      border-radius:10px;
+      text-decoration:none;
+      border:2px solid var(--primary);
+      transition:background .2s, color .2s;
+    }
+    .btn:hover { background:transparent; color:var(--primary); }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>送信が完了しました</h1>
-    <p>お問い合わせありがとうございます。担当者より折り返しご連絡いたします。</p>
-    <p><a href="/">トップへ戻る</a></p>
+    <h1>Thank You</h1>
+    <p>お問い合わせありがとうございます。<br>担当者より折り返しご連絡いたします。</p>
+    <a href="/" class="btn">トップへ戻る</a>
   </div>
 </body>
 </html>
